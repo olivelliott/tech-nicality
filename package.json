@@ -1,0 +1,32 @@
+{
+  "name": "tech-nicality",
+  "version": "1.0.0",
+  "description": "Tech blog site where developers can publish their blog posts and comment on other developers’ posts. This app follows the MVC paradigm in its architectural structure, and uses Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "seeds": "node seeds/index.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olivelliott/tech-nicality.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olivelliott/tech-nicality/issues"
+  },
+  "homepage": "https://github.com/olivelliott/tech-nicality#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.4",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.3"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
