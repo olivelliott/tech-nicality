@@ -1,8 +1,8 @@
-const router = require('express').Router;
+const router = require('express').Router();
 const { User, Post, Comment, Vote } = require('../../models');
 
 // * /api/users route
-
+// ! LOGIN / LOGOUT
 // GET all users
 router.get('/', (req, res) => {
     User.findAll({
@@ -109,3 +109,5 @@ router.delete('/:id', (req, res) => {
         res.json(dbUserData);
     });
 });
+
+module.exports = router;
