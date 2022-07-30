@@ -1,0 +1,71 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+        rel="stylesheet"
+        />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css"
+        />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
+        />
+        <script
+        src="https://kit.fontawesome.com/12be365f5a.js"
+        crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <title>Tech | nicality</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+        <header>
+            <div class="title">
+                <h1>
+                    <i class="fa-solid fa-code-branch"></i><a href="/" class="logo">Tech | nicality</a>
+                </h1>
+            </div>
+            <div class="nav">
+                <nav>
+                    {{#if loggedIn}}
+                        <a href="/dashboard">dashboard</a>
+                        <button id="logout" class="btn-no-style">logout</button>
+                    {{else}}
+                        <a href="/login">login</a>
+                    {{/if}}
+                </nav>
+            </div>
+        </header>
+        <section id="hero">
+            <div id="hero-section" class="text-center pt-5">
+                <p>
+                    A blog site where you can interact with our developer community
+                </p>
+            </div>
+        </section>
+        <main>
+            {{{body}}}
+        </main>
+        <footer>
+            Thanks for visiting!
+        </footer>
+        </div>
+
+        {{#if loggedIn}}
+            <script src="/javascript/logout.js"></script>
+        {{/if}}
+    </body>
+
+</html>

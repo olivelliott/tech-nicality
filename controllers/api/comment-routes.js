@@ -29,6 +29,7 @@ router.post('/', withAuth, (req, res) => {
     })
 });
 
+// DELETE a comment
 router.delete('/:id', withAuth, (req, res) => {
     Comment.destroy({
         where: { id: req.params.id }
@@ -45,7 +46,5 @@ router.delete('/:id', withAuth, (req, res) => {
         res.status(500).json(err);
     })
 })
-
-
 
 module.exports = router;
