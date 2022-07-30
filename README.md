@@ -14,7 +14,7 @@ Tech blog site where developers can publish their blog posts and comment on othe
 - [Questions](#questions)
 - [Credits](#credits)
 
-# User Story
+## User Story
 
 ```
 AS A developer who writes about tech
@@ -22,7 +22,7 @@ I WANT a CMS-style blog site
 SO THAT I can publish articles, blog posts, and my thoughts and opinions
 ```
 
-# Installation
+## Installation
 
 Please fork this repository over to your local system. Then follow these steps below to initialize the npm modules and necessary seeds for the database.
 
@@ -38,13 +38,11 @@ Please fork this repository over to your local system. Then follow these steps b
 - `npm run seed`
 - `npm start`
 
-### Media
+## Media
 
-![Product Categories](./media/categories.png)
+![Homepage](./media/technicality.png)
 
-![Products](./media/products.png)
-
-![Product Tags](./media/product-tags.png)
+![Dashboard](./media/dashboard.png)
 
 ## License
 This application is licensed under the MIT license. Please click on the link below to learn more.
