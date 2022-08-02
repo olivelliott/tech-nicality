@@ -40,6 +40,8 @@ Please fork this repository over to your local system. Then follow these steps b
 
 ## Media
 
+[Heroku Site Link](https://technicality.herokuapp.com/)
+
 ![Homepage](./media/technicality.png)
 
 ![Dashboard](./media/dashboard.png)
